@@ -28,6 +28,7 @@ RoomServiceOnDemand
 
 ###Diagram: RoomServiceOnDemand Use Cases 
 
+
 #### Create Account 
 <a href=https://github.com/BritikovKI/RoomServe/blob/3ba80daea6e8c56b728f9f7fa888398f271f3e26/src/application/controllers/Auth.php#L15>link</a>
 
@@ -71,6 +72,7 @@ RoomServiceOnDemand
 #### Delete Order (User part)  
 <a href=https://github.com/BritikovKI/RoomServe/blob/3ba80daea6e8c56b728f9f7fa888398f271f3e26/src/application/controllers/student/Orders.php#L127>Link</a>
 
+
 | Use Case Name   | Delete Order (User part)                                     |
 | --------------- | ------------------------------------------------------------ |
 | Actors          | User                                                         |
@@ -78,8 +80,10 @@ RoomServiceOnDemand
 | Flow of events  | 1. The User clicks on the action button.<br />2. The User chooses the delete button. <br />3. The User confirms order deleting. |
 | Post-conditions | Order deleted by the User                                    |
 
+
 #### Delete Order (Manager part) 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/Orders.php#L145>Link</a>
+
 
 | Use Case Name   | Delete Order (Manager part)                                  |
 | --------------- | ------------------------------------------------------------ |
@@ -88,9 +92,9 @@ RoomServiceOnDemand
 | Flow of events  | 1. The Manager clicks on the action button. <br />2. The Manager chooses the delete button. <br />3. The Manager confirms order deleting. |
 | Post-conditions | The system sends an email notification to the user about the removal of the order. The order is deleted by the manager |
 
+
 #### Send notification  
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/Orders.php#L245>Link</a>
-
 
 | Use Case Name   | Send notification                                            |
 | --------------- | ------------------------------------------------------------ |
@@ -99,8 +103,10 @@ RoomServiceOnDemand
 | Flow of events  | 1. The Manager opens one order. <br />2. The Manager selects the action (Edit/Activate/Approve/ Deactivate/ Delete/ Decline/Cancel).   <br />3. The system sends to the User a email with a notification about action. |
 | Post-conditions | The User received the notification created by the Manager.   |
 
+
 #### Accept Order  
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/Orders.php#L180>Link</a>
+
 
 | Use Case Name   | Accept Order                                                 |
 | --------------- | ------------------------------------------------------------ |
@@ -109,8 +115,10 @@ RoomServiceOnDemand
 | Flow of events  | 1.The Manager checks the order details. <br />2.The Manager accepts the order. |
 | Post-conditions | The order’s status is changed to Accepted. The User received the notification created by the Manager. |
 
+
 #### Decline Order  
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/Orders.php#L232>Link</a>
+
 
 | Use Case Name   | Decline Order                                                |
 | --------------- | ------------------------------------------------------------ |
@@ -119,8 +127,11 @@ RoomServiceOnDemand
 | Flow of events  | 1.The Manager checks an order details.  <br/>2.The Manager initiates declining of the order.   <br />3.The Manager inputs a reason for declining.  <br/>4.The Manager sends declining information to User. |
 | Post-conditions | The order’s status is changed to Declined. The User received the notification created by the Manager. |
 
+
 #### Deactivate Order  
 <a href="https://github.com/BritikovKI/RoomServe/blob/master/src/application/controllers/admin/Orders.php#L255-L293">Link</a>
+
+
 
 | Use Case Name   | Deactivate Order                                             |
 | --------------- | ------------------------------------------------------------ |
@@ -132,7 +143,7 @@ RoomServiceOnDemand
 #### Diagram: Detailed “Place Order” Use Case  
  <a href="https://github.com/BritikovKI/RoomServe/blob/master/src/application/controllers/student/Orders.php#L59-L120">Link</a>
 
-#####Enter Apartment No and description 
+#### 11. Enter Apartment No and description 
 
 | Use Case Name   | Enter Apartment No and description                           |
 | --------------- | ------------------------------------------------------------ |
@@ -141,7 +152,7 @@ RoomServiceOnDemand
 | Flow of events  | 1.The User enters an Apartment No for cleaning. <br />2.The User enters a description for cleaning. |
 | Post-conditions | The date and time for cleaning is fulfilled.                 |
 
-#####Select time and date 
+#### 12. Select time and date 
 
 | Use Case Name   | Select time and date                                         |
 | --------------- | ------------------------------------------------------------ |
@@ -150,7 +161,7 @@ RoomServiceOnDemand
 | Flow of events  | 1. The User initiates order creation. <br />2. The User selects a date for cleaning. <br />3. The User selects time for cleaning. |
 | Post-conditions | The date and time for cleaning is fulfilled.                 |
 
-#####Select cleaning options 
+#### 13. Select cleaning options 
 
 | Use Case Name   | Select cleaning options                                      |
 | --------------- | ------------------------------------------------------------ |
@@ -159,7 +170,7 @@ RoomServiceOnDemand
 | Flow of events  | 1. The User selects needed cleaning options from the list of offered services. |
 | Post-conditions | Preferable cleaning options are fulfilled.                   |
 
-#####Select payment options 
+#### 14. Select payment options 
 
 | Use Case Name   | Select cleaning options                                      |
 | --------------- | ------------------------------------------------------------ |
@@ -169,6 +180,7 @@ RoomServiceOnDemand
 | Post-conditions | Preferable payment options are fulfilled.                    |
 
 ####Diagram: Detailed “Manage list of offered services” use case 
+
 
 #####Add cleaning option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Cleaning_options.php#L56>Link</a>
@@ -184,6 +196,7 @@ RoomServiceOnDemand
 #####Update cleaning option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Cleaning_options.php#L73>Link</a>
 
+
 | Use Case Name   | Update cleaning option                                       |
 | --------------- | ------------------------------------------------------------ |
 | Actors          | Manager                                                      |
@@ -191,8 +204,10 @@ RoomServiceOnDemand
 | Flow of events  | 1.The Manager selects the cleaning option from an existing set. <br />2.The Manager edits the cleaning option name. <br />3.The Manager edits the short description. <br />4.The Manager edits the price. |
 | Post-conditions | The cleaning option data is updated.                         |
 
+
 #####Remove cleaning option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Cleaning_options.php#L111>Link</a>
+
 
 | Use Case Name   | Remove cleaning option                                       |
 | --------------- | ------------------------------------------------------------ |
@@ -213,9 +228,11 @@ RoomServiceOnDemand
 | Flow of events  | 1.The Manager initiates the addition of the payment option. <br />2.The Manager input the payment option name. <br />3.The Manager input the short description. |
 | Post-conditions | The payment option data is added.                            |
 
+
 #####Update payment option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Payment_options.php#L73>Link</a>
-| Use Case Name   | Update payment option                                       |
+
+| Use Case Name   | Update cleaning option                                       |
 | --------------- | ------------------------------------------------------------ |
 | Actors          | Manager                                                      |
 | Pre-conditions  | The Manager account has been authenticated.<br/>The Manager created at least one payment option. |
@@ -224,6 +241,7 @@ RoomServiceOnDemand
 
 #####Remove payment option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Payment_options.php#L111>Link</a>
+=
 | Use Case Name   | Remove payment option                                        |
 | --------------- | ------------------------------------------------------------ |
 | Actors          | Manager                                                      |
@@ -232,6 +250,7 @@ RoomServiceOnDemand
 | Post-conditions | The payment option data is removed.                          |
 
 ####Diagram: Detailed “Manage list of personnel options” use case 
+
 
 #####Add personnel option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Personal_options.php#L55>Link</a>
@@ -243,8 +262,10 @@ RoomServiceOnDemand
 | Flow of events  | 1.The Manager initiates the addition of the personnel option. <br />2.The Manager input the personnel option name. <br />3.The Manager input the short description. |
 | Post-conditions | The personnel option data is added.                          |
 
+
 #####Update personnel option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Personal_options.php#L72>Link</a>
+
 
 | Use Case Name   | Update personnel option                                      |
 | --------------- | ------------------------------------------------------------ |
@@ -253,8 +274,10 @@ RoomServiceOnDemand
 | Flow of events  | 1.The Manager selects the personnel option from an existing set. <br />2.The Manager edits the personnel option name. <br />3.The Manager edits the short description. |
 | Post-conditions | The personnel option data is updated.                        |
 
+
 #####Remove personnel option 
 <a href=https://github.com/BritikovKI/RoomServe/blob/5d9d66f92b239a22554ce3fd075a3b4a6745823d/src/application/controllers/admin/settings/Personal_options.php#L110>Link</a>
+
 
 | Use Case Name   | Remove personnel option                                      |
 | --------------- | ------------------------------------------------------------ |
