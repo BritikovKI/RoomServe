@@ -67,7 +67,7 @@ RoomServiceOnDemand
 | Actors          | User                                                         |
 | Pre-conditions  | The User has an account registered in the system.  <br />The User account has been authenticated.|
 | Flow of events  | 1. The User opens orders <br />2. The User presses "+ Add Order"<br />3. The user fills all required fields.<br />4. The user saves the new order. |
-| Post-conditions | The User sees the current status of the selected order       |
+| Post-conditions | The order appears in the list of orders in status "Pending"       |
 
 #### Check status 
 <a href=https://github.com/BritikovKI/RoomServe/blob/3ba80daea6e8c56b728f9f7fa888398f271f3e26/src/application/controllers/student/Orders.php#L243>Link</a>
@@ -77,7 +77,7 @@ RoomServiceOnDemand
 | Actors          | User                                                         |
 | Pre-conditions  | The User has an account registered in the system.  <br />The User account has been authenticated.  <br />The User already created an order. |
 | Flow of events  | 1. The User selects an order.  <br />2. The User receives the corresponding information. |
-| Post-conditions | The order appears in the list of orders in status "Pending"     |
+| Post-conditions | The User sees the current status of the selected order     |
 
 #### Delete Order (User part)  
 <a href=https://github.com/BritikovKI/RoomServe/blob/3ba80daea6e8c56b728f9f7fa888398f271f3e26/src/application/controllers/student/Orders.php#L127>Link</a>
