@@ -106,19 +106,19 @@ RoomServiceOnDemand
 | --------------- | ------------------------------------------------------------ |
 | Actors          | Manager, User                                                |
 | Pre-conditions  | The Manager account has been authenticated. <br />The User created an order. <br/>The Manager received the User’s order. |
-| Flow of events  | 1.The Manager checks an order details.  <br/>2.The Manager initiates declining of the order.   <br />3.The Manager inputs a reason for declining.  <br/>4.The Manager sends declining information to User. |
+| Flow of events  | 1.The Manager checks an order details.  <br/>2.The Manager initiates declining of the order.   <br />3.The Manager inputs a reason for declining.  <a href="https://github.com/BritikovKI/RoomServe/blob/master/src/application/controllers/admin/Orders.php#L232-L252"><br/>4.The Manager sends declining information to User. </a> |
 | Post-conditions | The order’s status is changed to Declined. The User received the notification created by the Manager. |
 
-#### 10. Deactivate Order  
+#### 10. <a href="https://github.com/BritikovKI/RoomServe/blob/master/src/application/controllers/admin/Orders.php#L255-L293">Deactivate Order</a>  
 
 | Use Case Name   | Deactivate Order                                             |
 | --------------- | ------------------------------------------------------------ |
 | Actors          | Manager, User                                                |
 | Pre-conditions  | The Manager account has been authenticated. <br />The User created an order. <br/>The Manager received the User’s order. |
-| Flow of events  | 1. The Manager checks the order details.  <br />2. The Manager accepts the order. |
-| Post-conditions | The order’s status is changed to Accepted. The User received the notification created by the Manager. |
+| Flow of events  | 1. The Manager checks the order details.  <br/>2. The Manager deactivate the order.</a> |
+| Post-conditions | The order’s status is changed to Deactivated. The User received the notification created by the Manager. |
 
-#### Diagram: Detailed “Place Order” Use Case  
+#### Diagram: Detailed <a href="https://github.com/BritikovKI/RoomServe/blob/master/src/application/controllers/student/Orders.php#L59-L120">“Place Order”</a> Use Case  
 
 #### 11. Enter Apartment No and description 
 
