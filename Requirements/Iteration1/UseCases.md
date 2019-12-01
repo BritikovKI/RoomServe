@@ -293,7 +293,7 @@ RoomServiceOnDemand
 | --------------- | ------------------------------------------------------------ |
 | Actors          | Manager                                                      |
 | Pre-conditions  | The Manager account has been authenticated.<br/>The Manager created at least one personnel option. |
-| Flow of events  | 1.The Manager selects the personneloption from an existing set. <br />2.The Manager initiates removing of personnel option. <br />3.The Manager removes the personnel option. |
+| Flow of events  | 1.The Manager selects the personnel option from an existing set. <br />2.The Manager initiates removing of personnel option. <br />3.The Manager removes the personnel option. |
 | Post-conditions | The personnel option data is removed.                        |
 
 ####
