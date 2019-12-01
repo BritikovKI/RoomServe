@@ -62,7 +62,7 @@ RoomServiceOnDemand
 #### Add Order
 <a href=https://github.com/BritikovKI/RoomServe/blob/48571a5cd4d8b9a4fe92ef267a3716a5a0bcd549/src/application/controllers/student/Orders.php#L28>Link</a>
 
-| Use Case Name   | Check status                                                 |
+| Use Case Name   | Add Order                                                 |
 | --------------- | ------------------------------------------------------------ |
 | Actors          | User                                                         |
 | Pre-conditions  | The User has an account registered in the system.  <br />The User account has been authenticated.|
